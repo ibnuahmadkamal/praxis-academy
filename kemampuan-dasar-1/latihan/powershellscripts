@@ -1,1 +1,2 @@
-
+attrib +r report.txt
+//file menjadi read only
