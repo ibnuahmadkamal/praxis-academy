@@ -1,2 +1,144 @@
-attrib +r report.txt
+1. attrib +r report.txt
 //file menjadi read only
+2. arp /a
+//menampilkan tabel cache arp untuk semua antarmuka
+Interface: 192.168.56.1 --- 0x13
+  Internet Address      Physical Address      Type
+  192.168.56.255        ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+
+Interface: 192.168.43.66 --- 0x17
+  Internet Address      Physical Address      Type
+  192.168.43.1          34-e9-11-30-34-3f     dynamic
+  192.168.43.255        ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+3. at /delete
+//menghapus jadwal server saat ini yang ada
+The AT command has been deprecated. Please use schtasks.exe instead.
+
+This operation will delete all scheduled jobs.
+Do you want to continue this operation? (Y/N) [N]:
+4. change port
+//No serial ports were found.
+5. cipher
+//
+U .android
+U .dotnet
+U .LINE
+U .nbi
+U .oracle_jre_usage
+U .packettracer
+U .QtWebEngineProcess
+U .VirtualBox
+6. dir | clip  
+//copy list directori
+7. ping google.com
+//Pinging google.com [74.125.200.101] with 32 bytes of data:
+Reply from 74.125.200.101: bytes=32 time=54ms TTL=37
+Reply from 74.125.200.101: bytes=32 time=47ms TTL=37
+Reply from 74.125.200.101: bytes=32 time=90ms TTL=37
+Reply from 74.125.200.101: bytes=32 time=50ms TTL=37
+
+Ping statistics for 74.125.200.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 47ms, Maximum = 90ms, Average = 60ms
+8. cls
+//membersihkan perintah sebelumnya di prompt
+9. ipconfig
+//Windows IP Configuration
+setting TCP/IP
+10. help
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts.
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete.
+
+    Without help files, Get-Help displays auto-generated help for cmdlets,
+    functions, and scripts.
+
+
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+
+    For more information about the Update-Help cmdlet, type:
+
+       Get-Help Update-Help -Online
+
+-- More  --
+11. close
+\\ menutup powershell
+12.getmac
+\\ menampilkan alamat mac
+13. dir
+\\ menampilkan seluruh directori
+14. color 07
+\\ mengubah warna bg menjadi hitam putih
+15.  hostname                                                              
+\\DESKTOP-MS7CHK2
+16. cd\
+\\root directori
+17. query session
+ SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE
+ services                                    0  Disc
+                                             1  Down
+>console           Asus X550Z                3  Active
+18. date 08.13.2000
+//tanggal sistem berubah menjadi 13 agustus 2000
+19. break=[on|off]
+//break=[on : The term 'break=[on' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+At line:1 char:1
++ break=[on|off]
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (break=[on:String) [], CommandNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : CommandNotFoundException
+20. copy tr.txt
+    copy : Cannot overwrite the item C:\Users\Asus X550Z\tr.txt with itself.
+At line:1 char:1
++ copy tr.txt
++ ~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\Asus X550Z\tr.txt:String) [Copy-Item], I
+   OException
+    + FullyQualifiedErrorId : CopyError,Microsoft.PowerShell.Commands.CopyItemCommand
