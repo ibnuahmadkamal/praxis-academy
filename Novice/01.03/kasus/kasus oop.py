@@ -21,18 +21,21 @@ class nilai_persegi_panjang(luas_bangun) :
 
 '''
 import math
-class trigonometri :
-    def  cari_nilai (derajat):
-        print("")
-        nilai_sin = math.sin(math.radians(derajat))
-        print("Hasil dari perpangkatan derajat tersebut adalah :",nilai_sin)
+class masukan_trigonometri :
+    def __init__(self,derajat,pangkat):
+        self.derajat = derajat
+        self.pangkat = pangkat
+       
 
-class masukan_trigonometri (trigonometri):
-    def __init__(self):
-        self.derajat = int(input("masukan derajat :"))
+    def nilai_sin(self):
+        self.nilai_sin=math.pow(self.derajat,self.pangkat)
+        return 'nilai sinya {}'.format(self.nilai_sin)
 
-objek = masukan_trigonometri()
-objek.cari_nilai()
+
+
+a=int(input('masukan derajat :'))
+objek =masukan_trigonometri.nilai_sin(a,2)
+objek.nilai_sin()
 '''
 print ("===============================")
 print ("program sederhana ")
