@@ -1,17 +1,17 @@
-import pymysql
+import mysql.connector
 
-db = pymysql.connect(
+db = mysql.connector.connect(
   host="localhost",
   user="root",
   passwd="",
-  database="praktik_praxis"
+  database="toko_mainan"
 )
 
 cursor = db.cursor()
 sql = """CREATE TABLE customers (
-  Id_user INT(13) AUTO_INCREMENT PRIMARY KEY,
-  Nama VARCHAR(255),
-  Alamat Varchar(255)
+  customer_id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  address Varchar(255)
 )
 """
 cursor.execute(sql)

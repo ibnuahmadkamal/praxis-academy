@@ -1,12 +1,13 @@
-import pymysql
+import mysql.connector
 
-db = pymysql.connect(
+db = mysql.connector.connect(
   host="localhost",
   user="root",
   passwd="",
-  database="praktik_praxis"
+  database="toko_mainan"
 )
-cursor =db.cursor()
+
+cursor = db.cursor()
 sql = "SELECT * FROM customers"
 cursor.execute(sql)
 
